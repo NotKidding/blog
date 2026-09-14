@@ -1,0 +1,19 @@
+{
+  "name": "nandakumar-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "blog.nandakumar.online — static markdown blog",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --drafts --serve",
+    "preview": "node build.js --serve",
+    "new": "node new-post.js",
+    "og": "node make-og.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
+    "marked": "^16.5.0"
+  }
+}

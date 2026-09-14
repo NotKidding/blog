@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="JetBrains Mono, ui-monospace, monospace">
+  <defs>
+    <radialGradient id="g1" cx="85%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#103060" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#103060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="10%" cy="90%" r="70%">
+      <stop offset="0%" stop-color="#103060" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#103060" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b2147"/>
+      <stop offset="100%" stop-color="#07172e"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#7bb5f5" stroke-opacity=".18" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#base)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".5"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+
+  <!-- reticle -->
+  <g transform="translate(1010,150)" stroke="#7bb5f5" fill="none">
+    <circle r="62" stroke-opacity=".35" stroke-width="2"/>
+    <circle r="10" fill="#7bb5f5" stroke="none" opacity=".9"/>
+    <g stroke-width="3" stroke-linecap="round" stroke-opacity=".6">
+      <line x1="0" y1="-86" x2="0" y2="-72"/>
+      <line x1="0" y1="72"  x2="0" y2="86"/>
+      <line x1="-86" y1="0" x2="-72" y2="0"/>
+      <line x1="72"  y1="0" x2="86"  y2="0"/>
+    </g>
+  </g>
+
+  <!-- eyebrow -->
+  <g transform="translate(90,150)">
+    <rect x="0" y="-26" width="300" height="40" rx="20" fill="#7bb5f5" fill-opacity=".07" stroke="#7bb5f5" stroke-opacity=".35"/>
+    <circle cx="24" cy="-6" r="5" fill="#7bf5b5"/>
+    <text x="44" y="1" fill="#7bb5f5" font-size="15" letter-spacing="3.5">NOTES FROM THE LAB</text>
+  </g>
+
+  <!-- title -->
+  <text x="90" y="300" fill="#f6fdfe" font-family="Space Grotesk, system-ui, sans-serif" font-size="104" font-weight="700" letter-spacing="-3">field <tspan fill="#7bb5f5">notes</tspan>.</text>
+
+  <!-- lede -->
+  <text x="90" y="366" fill="#f6fdfe" fill-opacity=".62" font-family="Space Grotesk, system-ui, sans-serif" font-size="27">Write-ups on red teaming &amp; offensive security.</text>
+
+  <!-- divider -->
+  <line x1="90" y1="452" x2="1110" y2="452" stroke="#7bb5f5" stroke-opacity=".22"/>
+
+  <!-- footline -->
+  <g transform="translate(90,506)">
+    <circle cx="7" cy="-5" r="7" fill="#7bb5f5"/>
+    <text x="30" y="1" fill="#a4ccf5" font-size="21" letter-spacing="4">K.S_NANDAKUMAR // RED_TEAM</text>
+  </g>
+  <text x="1110" y="507" text-anchor="end" fill="#a4ccf5" fill-opacity=".55" font-size="19" letter-spacing="2.5">blog.nandakumar.online</text>
+</svg>
